@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    image: flask-app
+    command: python main.py
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+      - redis
+    environment:
+      - DATABASE=product
+      - USER=adi
+      - PASSWORD=test
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    networks:
+      test:
+
+  webhook:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    command: python webhook.py
+    image: webhook
+    container_name: webhook
+    ports:
+      - '5001:5001'
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+      - redis
+      - flask-app
+    networks:
+      test:
+
+  celery-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    command: celery --app tasks.celery worker --loglevel=info --logfile=celery.log
+    volumes:
+      - .:/usr/src/app
+    container_name: celery-worker
+    depends_on:
+      - flask-app
+      - redis
+      - db
+    environment:
+      - DATABASE=product
+      - USER=adi
+      - PASSWORD=test
+      - WEBHOOK_URL=http://webhook:5001/webhook
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    user: celeryuser
+    networks:
+      test:
+
+  redis:
+    image: redis:6-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      test:
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    container_name: db
+    environment:
+      POSTGRES_USER: adi
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: product
+    ports:
+      - "5432:5432"
+    networks:
+      test:
+
+
+networks:
+  test:
+    name: test
+    driver: bridge
+
