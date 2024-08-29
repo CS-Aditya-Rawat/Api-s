@@ -20,7 +20,7 @@ def process_images(data):
         return "No database connection found."
     imgur_upload_url = "https://api.imgur.com/3/image"
     headers = {
-        "Authorization": f"Client-ID {os.environ.get("ING_CLIENT_ID", 234)}",
+        "Authorization": f"Client-ID {os.environ.get('IMG_CLIENT_ID', 234)}",
     }
     result_data = []
     for row in data[1:]:

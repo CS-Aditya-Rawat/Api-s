@@ -1,0 +1,224 @@
+[2024-08-29 17:53:22,018: WARNING/ForkPoolWorker-1] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,020: ERROR/ForkPoolWorker-1] Signal handler <function init_worker at 0x7f2080f6c5e0> raised: OperationalError('connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/src/app/tasks.py", line 78, in init_worker
+    db_conn = psycopg2.connect(
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-08-29 17:53:22,049: WARNING/ForkPoolWorker-2] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,051: ERROR/ForkPoolWorker-2] Signal handler <function init_worker at 0x7f2080f6c5e0> raised: OperationalError('connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/src/app/tasks.py", line 78, in init_worker
+    db_conn = psycopg2.connect(
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-08-29 17:53:22,079: WARNING/ForkPoolWorker-3] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,081: ERROR/ForkPoolWorker-3] Signal handler <function init_worker at 0x7f2080f6c5e0> raised: OperationalError('connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/src/app/tasks.py", line 78, in init_worker
+    db_conn = psycopg2.connect(
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-08-29 17:53:22,119: WARNING/ForkPoolWorker-4] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,122: ERROR/ForkPoolWorker-4] Signal handler <function init_worker at 0x7f2080f6c5e0> raised: OperationalError('connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/src/app/tasks.py", line 78, in init_worker
+    db_conn = psycopg2.connect(
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.20.0.3), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-08-29 17:53:22,158: WARNING/ForkPoolWorker-5] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,167: ERROR/ForkPoolWorker-5] Signal handler <function init_worker at 0x7f2080f6c5e0> raised: OperationalError('connection to server at "db" (172.20.0.3), port 5432 failed: FATAL:  the database system is starting up\n')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/src/app/tasks.py", line 78, in init_worker
+    db_conn = psycopg2.connect(
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "db" (172.20.0.3), port 5432 failed: FATAL:  the database system is starting up
+
+[2024-08-29 17:53:22,198: WARNING/ForkPoolWorker-6] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,237: WARNING/ForkPoolWorker-7] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,276: WARNING/ForkPoolWorker-8] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,316: WARNING/ForkPoolWorker-9] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,354: WARNING/ForkPoolWorker-10] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,394: WARNING/ForkPoolWorker-11] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,433: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 17:53:22,435: WARNING/ForkPoolWorker-12] Initiliazing database connection for worker.
+[2024-08-29 17:53:22,442: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-08-29 17:53:22,443: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 17:53:22,448: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 17:53:23,461: INFO/MainProcess] mingle: all alone
+[2024-08-29 17:53:23,474: INFO/MainProcess] celery@89da32f4491b ready.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-11] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-6] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-12] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-7] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-10] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-9] Closing database connectionn for worker.
+[2024-08-29 17:54:32,240: WARNING/ForkPoolWorker-8] Closing database connectionn for worker.
+[2024-08-29 17:54:35,426: WARNING/ForkPoolWorker-1] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,453: WARNING/ForkPoolWorker-2] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,477: WARNING/ForkPoolWorker-3] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,502: WARNING/ForkPoolWorker-4] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,525: WARNING/ForkPoolWorker-5] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,550: WARNING/ForkPoolWorker-6] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,573: WARNING/ForkPoolWorker-7] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,595: WARNING/ForkPoolWorker-8] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,620: WARNING/ForkPoolWorker-9] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,642: WARNING/ForkPoolWorker-10] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,670: WARNING/ForkPoolWorker-11] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,700: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 17:54:35,703: WARNING/ForkPoolWorker-12] Initiliazing database connection for worker.
+[2024-08-29 17:54:35,709: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-08-29 17:54:35,710: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 17:54:35,712: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 17:54:36,725: INFO/MainProcess] mingle: all alone
+[2024-08-29 17:54:36,741: INFO/MainProcess] celery@f5674aa2fc42 ready.
+[2024-08-29 17:54:51,256: INFO/MainProcess] Task process_images[0baf7312-798c-481c-8066-bc4acf0a7a11] received
+[2024-08-29 17:55:01,119: WARNING/ForkPoolWorker-7] Error: 
+[2024-08-29 17:55:01,120: WARNING/ForkPoolWorker-7]  
+[2024-08-29 17:55:01,120: WARNING/ForkPoolWorker-7] {'errors': [{'id': 'legacy-api-6cd674d4b-qxb5q/RXrePHbIKM-3018542', 'code': '429', 'status': 'Too Many Requests', 'detail': 'Too Many Requests'}]}
+[2024-08-29 17:55:01,140: INFO/ForkPoolWorker-7] Task process_images[0baf7312-798c-481c-8066-bc4acf0a7a11] succeeded in 9.882113669999967s: True
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-12] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-3] Closing database connectionn for worker.
+[2024-08-29 17:56:18,939: WARNING/ForkPoolWorker-5] Closing database connectionn for worker.
+[2024-08-29 17:56:18,939: WARNING/ForkPoolWorker-2] Closing database connectionn for worker.
+[2024-08-29 17:56:18,939: WARNING/ForkPoolWorker-8] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-4] Closing database connectionn for worker.
+[2024-08-29 17:56:18,939: WARNING/ForkPoolWorker-9] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-10] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-7] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-6] Closing database connectionn for worker.
+[2024-08-29 17:56:18,939: WARNING/ForkPoolWorker-1] Closing database connectionn for worker.
+[2024-08-29 17:56:18,940: WARNING/ForkPoolWorker-11] Closing database connectionn for worker.
+[2024-08-29 18:05:38,493: WARNING/ForkPoolWorker-1] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,519: WARNING/ForkPoolWorker-2] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,545: WARNING/ForkPoolWorker-3] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,573: WARNING/ForkPoolWorker-4] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,602: WARNING/ForkPoolWorker-5] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,625: WARNING/ForkPoolWorker-6] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,650: WARNING/ForkPoolWorker-7] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,677: WARNING/ForkPoolWorker-8] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,715: WARNING/ForkPoolWorker-9] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,754: WARNING/ForkPoolWorker-10] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,792: WARNING/ForkPoolWorker-11] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,827: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 18:05:38,830: WARNING/ForkPoolWorker-12] Initiliazing database connection for worker.
+[2024-08-29 18:05:38,836: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-08-29 18:05:38,837: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 18:05:38,840: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 18:05:39,851: INFO/MainProcess] mingle: all alone
+[2024-08-29 18:05:39,869: INFO/MainProcess] celery@4bc6fa4cc45c ready.
+[2024-08-29 18:05:45,369: INFO/MainProcess] Task process_images[a9cf0646-d9de-45f3-9f21-eb52165571cb] received
+[2024-08-29 18:05:52,250: WARNING/ForkPoolWorker-7] Error: 
+[2024-08-29 18:05:52,251: WARNING/ForkPoolWorker-7]  
+[2024-08-29 18:05:52,252: WARNING/ForkPoolWorker-7] {'errors': [{'id': 'legacy-api-6cd674d4b-pxchs/CvlCfdomZB-3030539', 'code': '429', 'status': 'Too Many Requests', 'detail': 'Too Many Requests'}]}
+[2024-08-29 18:05:52,275: INFO/ForkPoolWorker-7] Task process_images[a9cf0646-d9de-45f3-9f21-eb52165571cb] succeeded in 6.902196828000115s: True
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-6] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-1] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-2] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-4] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-11] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-10] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-3] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-5] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-8] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-7] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-9] Closing database connectionn for worker.
+[2024-08-29 18:07:46,709: WARNING/ForkPoolWorker-12] Closing database connectionn for worker.
+[2024-08-29 18:08:22,232: WARNING/ForkPoolWorker-1] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,261: WARNING/ForkPoolWorker-2] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,289: WARNING/ForkPoolWorker-3] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,314: WARNING/ForkPoolWorker-4] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,339: WARNING/ForkPoolWorker-5] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,363: WARNING/ForkPoolWorker-6] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,391: WARNING/ForkPoolWorker-7] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,417: WARNING/ForkPoolWorker-8] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,444: WARNING/ForkPoolWorker-9] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,471: WARNING/ForkPoolWorker-10] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,500: WARNING/ForkPoolWorker-11] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,528: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 18:08:22,530: WARNING/ForkPoolWorker-12] Initiliazing database connection for worker.
+[2024-08-29 18:08:22,536: INFO/MainProcess] Connected to redis://redis:6379/0
+[2024-08-29 18:08:22,538: WARNING/MainProcess] /usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-08-29 18:08:22,540: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 18:08:23,552: INFO/MainProcess] mingle: all alone
+[2024-08-29 18:08:23,564: INFO/MainProcess] celery@82405bb54290 ready.
+[2024-08-29 18:08:33,995: INFO/MainProcess] Task process_images[d07cc406-2e8f-4f9d-8685-f064c4b6a9a5] received
+[2024-08-29 18:08:41,158: WARNING/ForkPoolWorker-7] Error: 
+[2024-08-29 18:08:41,159: WARNING/ForkPoolWorker-7]  
+[2024-08-29 18:08:41,159: WARNING/ForkPoolWorker-7] {'errors': [{'id': 'legacy-api-6cd674d4b-qxb5q/RXrePHbIKM-3033082', 'code': '429', 'status': 'Too Many Requests', 'detail': 'Too Many Requests'}]}
+[2024-08-29 18:08:41,180: INFO/ForkPoolWorker-7] Task process_images[d07cc406-2e8f-4f9d-8685-f064c4b6a9a5] succeeded in 7.179237569999941s: True
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-8] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-6] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-5] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-2] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-3] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-12] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-1] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-4] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-7] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-10] Closing database connectionn for worker.
+[2024-08-29 18:09:05,347: WARNING/ForkPoolWorker-11] Closing database connectionn for worker.
+[2024-08-29 18:09:05,346: WARNING/ForkPoolWorker-9] Closing database connectionn for worker.
